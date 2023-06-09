@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algolia Instant Search</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/instantsearch.css@8.0.0/themes/algolia-min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .search-wrapper {
+        display: flex;
+        margin-bottom: 20px;
+      }
+      #search-box {
+        flex: 1;
+      }
+      #zip-code-filter {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="search-wrapper">
+      <div id="search-box"></div>
+      <div id="zip-code-filter"></div>
+    </div>
+    <div id="hits"></div>
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.17.2/dist/algoliasearch-lite.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.56.1"></script>
+    <script src="search.js"></script>
+  </body>
+</html>
